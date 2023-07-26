@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - uses: lob/action_sam_jackson@0.0.2
+        with:
+          message: 'hello'
+          token: ${{secrets.GITHUB_TOKEN}}
